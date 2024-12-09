@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SI Assessment</string>
+    <string name="india_tour_of_new_zealand_2019">India tour of New Zealand,2019</string>
+    <string name="view_more">View More </string>
+    <string name="vs">vs</string>
+    <string name="cwk">%1$s (C &amp; Wk )</string>
+    <string name="captain"> %1$s (C)</string>
+    <string name="wicketkeeper">%1$s (Wk)</string>
+
+    <string name="Style">Style : %1$s </string>
+    <string name="Average">Average : %1$s </string>
+    <string name="StrikeRate">Strike Rate : %1$s </string>
+    <string name="battingRuns">Runs : %1$s </string>
+    <string name="economyRate">Economy Rate : %1$s </string>
+    <string name="wickets">Wickets : %1$s </string>
+</resources>
