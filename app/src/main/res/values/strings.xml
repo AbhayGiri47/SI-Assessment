@@ -13,4 +13,10 @@
     <string name="battingRuns">Runs : %1$s </string>
     <string name="economyRate">Economy Rate : %1$s </string>
     <string name="wickets">Wickets : %1$s </string>
+    <string name="filter">Filter</string>
+    <string name="batting">Batting</string>
+    <string name="bowling">Bowling</string>
+    <string name="display_all">Display All</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
 </resources>

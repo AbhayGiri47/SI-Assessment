@@ -1,123 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginEnd="20dp"
-    android:layout_marginStart="20dp"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp_16"
+    android:layout_margin="@dimen/dp_16"
+    android:layout_centerInParent="true"
+    app:cardElevation="@dimen/dp_0"
+   >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clBattingDetails"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dp_20"
+        >
 
+    <TextView
+        android:id="@+id/tvBatting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/blue_gray_200"
+        android:padding="@dimen/dp_8"
+        android:text="@string/batting"
+        android:textAllCaps="true"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:background="@color/blue_gray_500"
-            android:id="@+id/tvBatting"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:text="Batting"
-            android:textAllCaps="true"
-            android:textSize="18sp"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvBatting"
+        tools:text="Style" />
 
-        <TextView
-            android:id="@+id/tvStyle"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvBatting"
-            tools:text="Style" />
+    <TextView
+        android:id="@+id/tvAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvStyle"
+        tools:text="Average" />
 
-        <TextView
-            android:id="@+id/tvAverage"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvStyle"
-            tools:text="Average" />
+    <TextView
+        android:id="@+id/tvStrikeRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvAverage"
+        tools:text="StrikeRate" />
 
-        <TextView
-            android:id="@+id/tvStrikeRate"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvAverage"
-            tools:text="StrikeRate" />
+    <TextView
+        android:id="@+id/tvRuns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvStrikeRate"
+        tools:text="Runs" />
 
-        <TextView
-            android:id="@+id/tvRuns"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvStrikeRate"
-            tools:text="Runs" />
+    <TextView
+        android:id="@+id/tvBowling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/blue_gray_200"
+        android:padding="@dimen/dp_8"
+        android:text="@string/bowling"
+        android:textAllCaps="true"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintTop_toBottomOf="@+id/tvRuns" />
+
+    <TextView
+        android:id="@+id/tvBowlingStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvBowling"
+        tools:text="Style" />
+
+    <TextView
+        android:id="@+id/tvBowlingAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvBowlingStyle"
+        tools:text=" Average" />
+
+    <TextView
+        android:id="@+id/tvEconomyRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvBowlingAverage"
+        tools:text="Economy Rate" />
+
+    <TextView
+        android:id="@+id/tvWickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tvEconomyRate"
+        tools:text="Wickets" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupBatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvBatting,tvStyle,tvAverage,tvStrikeRate,tvRuns" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupBowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tvBowling,tvBowlingStyle,tvBowlingAverage,tvEconomyRate,tvWickets" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clBowlingDetails"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/clBattingDetails">
 
-
-        <TextView
-            android:background="@color/blue_gray_500"
-            android:id="@+id/tvBowling"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:text="Bowling"
-            android:textAllCaps="true"
-            android:textSize="18sp"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvBowlingStyle"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvBowling"
-            tools:text="Style" />
-
-        <TextView
-            android:id="@+id/tvBowlingAverage"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvBowlingStyle"
-            tools:text=" Average" />
-
-        <TextView
-            android:id="@+id/tvEconomyRate"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvBowlingAverage"
-            tools:text="Economy Rate" />
-
-        <TextView
-            android:id="@+id/tvWickets"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="8dp"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/tvEconomyRate"
-            tools:text="Wickets" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

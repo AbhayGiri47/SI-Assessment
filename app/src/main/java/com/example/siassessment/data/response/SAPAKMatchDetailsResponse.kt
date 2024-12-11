@@ -4,12 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class SAPAKMatchDetailsResponse(
 
-    @SerializedName("Matchdetail") var Matchdetail: Matchdetail? = Matchdetail(),
-    @SerializedName("Teams") var Teams: TeamsSaPak? = TeamsSaPak()
+    @SerializedName("Matchdetail") var Matchdetail: MatchDetail? = MatchDetail(),
+    @SerializedName("Teams") var Teams: Any? = null
 
     )
-
-data class TeamsSaPak (
-    @SerializedName("6" ) var team1 : Team? = Team(),
-    @SerializedName("7" ) var team2: Team? = Team()
-)
